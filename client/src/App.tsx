@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import CowTokenSale from "./contracts/CowTokenSale.json";
-import Cow from "./contracts/Cow.json";
+import DRajuTokenSale from "./contracts/DRajuTokenSale.json";
+import DRaju from "./contracts/DRaju.json";
 import getWeb3 from "./getWeb3";
 import BuyToken from "./components/BuyToken";
 import "./App.css";
@@ -29,27 +29,34 @@ const App: React.FC = () => {
       // Get the blockchain network our smart contracts are on
       const networkId = await web3.eth.net.getId();
 
-      //Get the networks object of the CowTokenSale smart contract on this network
-      let networks: any = CowTokenSale.networks;
+      //Get the networks object of the DRajuTokenSale smart contract on this network
+      let networks: any = DRajuTokenSale.networks;
       let deployedNetwork = networks[networkId];
 
       //Get the instance of the smart contract on the network using its ABI and
       //the address of the smart contract on the network
 
       const tokenSale = new web3.eth.Contract(
-        CowTokenSale.abi,
+        DRajuTokenSale.abi,
         deployedNetwork && deployedNetwork.address
       );
 
       setTokenSaleContract(tokenSale);
+
+      const price = await tokenSale.methods
+        .tokenPrice()
+        .call({ from: currAccounts[0] });
+
+      console.log("price: ", price);
+
       console.log("TOKEN SALE CONTRACT");
       console.log(tokenSale._address);
       // const tokenSaleAddress = await tokenSale.address();
       // console.log("TOKEN SALE ADDRESS: ", tokenSaleAddress);
-      networks = Cow.networks;
+      networks = DRaju.networks;
       deployedNetwork = networks[networkId];
       const tokenInstance = new web3.eth.Contract(
-        Cow.abi,
+        DRaju.abi,
         deployedNetwork && deployedNetwork.address
       );
       console.log("Token Instance: ", tokenInstance._address);
@@ -57,6 +64,8 @@ const App: React.FC = () => {
       const name = await tokenInstance.methods
         .name()
         .call({ from: currAccounts[0] });
+
+      console.log("Name: ", name);
 
       const symbol = await tokenInstance.methods
         .symbol()

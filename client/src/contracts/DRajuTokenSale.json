@@ -1,10 +1,10 @@
 {
-  "contractName": "CowTokenSale",
+  "contractName": "DRajuTokenSale",
   "abi": [
     {
       "inputs": [
         {
-          "internalType": "contract Cow",
+          "internalType": "contract DRaju",
           "name": "_tokenContract",
           "type": "address"
         },
@@ -43,7 +43,7 @@
       "name": "tokenContract",
       "outputs": [
         {
-          "internalType": "contract Cow",
+          "internalType": "contract DRaju",
           "name": "",
           "type": "address"
         }
@@ -107,17 +107,17 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract Cow\",\"name\":\"_tokenContract\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_tokenPrice\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"buyer\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"numberOfTokens\",\"type\":\"uint256\"}],\"name\":\"Buy\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_numberOfTokens\",\"type\":\"uint256\"}],\"name\":\"buyTokens\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"endSale\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"internalType\":\"contract Cow\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokensSold\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/CowTokenSale.sol\":\"CowTokenSale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/Cow.sol\":{\"keccak256\":\"0x4be969aefa506946b46f09b0142bb739b21904570087551060f3be31c51b2a10\",\"urls\":[\"bzz-raw://df263853f296c5e000c6b14791fcc519e27016f62b0259abd9a80df50eb5af99\",\"dweb:/ipfs/QmaE4dBEoCpruP9tiiyK5qrz6iGVqjYCDZotRG2AhbmDgc\"]},\"/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/CowTokenSale.sol\":{\"keccak256\":\"0xae3d13be7ff40e5ac1af2e0b2e43d2446fdd886435936a9bb5889e232a476cb9\",\"urls\":[\"bzz-raw://11030e8bbe31743ae29f132c3f6d3cc705807aaeef01308ab04a02808840e0ef\",\"dweb:/ipfs/QmQapZxN78f6639XRYbEGM5zKs7MHgZKmxkTPiS63KqkA8\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506040516107113803806107118339818101604052604081101561003357600080fd5b810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600281905550505061062a806100e76000396000f3fe60806040526004361061004a5760003560e01c80633610724e1461004f578063380d831b1461007d578063518ab2a81461009457806355a373d6146100bf5780637ff9b59614610116575b600080fd5b61007b6004803603602081101561006557600080fd5b8101908080359060200190929190505050610141565b005b34801561008957600080fd5b506100926103a2565b005b3480156100a057600080fd5b506100a96105c3565b6040518082815260200191505060405180910390f35b3480156100cb57600080fd5b506100d46105c9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012257600080fd5b5061012b6105ef565b6040518082815260200191505060405180910390f35b3460025482021461015157600080fd5b80600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101f157600080fd5b505afa158015610205573d6000803e3d6000fd5b505050506040513d602081101561021b57600080fd5b8101908080519060200190929190505050101561023757600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156102e057600080fd5b505af11580156102f4573d6000803e3d6000fd5b505050506040513d602081101561030a57600080fd5b810190808051906020019092919050505061032457600080fd5b806003600082825401925050819055507fe3d4187f6ca4248660cc0ac8b8056515bac4a8132be2eca31d6d0cc170722a7e3382604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146103fb57600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156104d957600080fd5b505afa1580156104ed573d6000803e3d6000fd5b505050506040513d602081101561050357600080fd5b81019080805190602001909291905050506040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561057d57600080fd5b505af1158015610591573d6000803e3d6000fd5b505050506040513d60208110156105a757600080fd5b81019080805190602001909291905050506105c157600080fd5b565b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6002548156fea265627a7a723158208caff439fab5ee9717ca065564eb1579b38789ef4ef554856867a753b43fe5a364736f6c63430005100032",
-  "deployedBytecode": "0x60806040526004361061004a5760003560e01c80633610724e1461004f578063380d831b1461007d578063518ab2a81461009457806355a373d6146100bf5780637ff9b59614610116575b600080fd5b61007b6004803603602081101561006557600080fd5b8101908080359060200190929190505050610141565b005b34801561008957600080fd5b506100926103a2565b005b3480156100a057600080fd5b506100a96105c3565b6040518082815260200191505060405180910390f35b3480156100cb57600080fd5b506100d46105c9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012257600080fd5b5061012b6105ef565b6040518082815260200191505060405180910390f35b3460025482021461015157600080fd5b80600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101f157600080fd5b505afa158015610205573d6000803e3d6000fd5b505050506040513d602081101561021b57600080fd5b8101908080519060200190929190505050101561023757600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156102e057600080fd5b505af11580156102f4573d6000803e3d6000fd5b505050506040513d602081101561030a57600080fd5b810190808051906020019092919050505061032457600080fd5b806003600082825401925050819055507fe3d4187f6ca4248660cc0ac8b8056515bac4a8132be2eca31d6d0cc170722a7e3382604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146103fb57600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156104d957600080fd5b505afa1580156104ed573d6000803e3d6000fd5b505050506040513d602081101561050357600080fd5b81019080805190602001909291905050506040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561057d57600080fd5b505af1158015610591573d6000803e3d6000fd5b505050506040513d60208110156105a757600080fd5b81019080805190602001909291905050506105c157600080fd5b565b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6002548156fea265627a7a723158208caff439fab5ee9717ca065564eb1579b38789ef4ef554856867a753b43fe5a364736f6c63430005100032",
-  "sourceMap": "90:1220:1:-;;;295:250;8:9:-1;5:2;;;30:1;27;20:12;5:2;295:250:1;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;295:250:1;;;;;;;;;;;;;;;;;;;;;;;;;402:10;394:5;;:18;;;;;;;;;;;;;;;;;;465:14;449:13;;:30;;;;;;;;;;;;;;;;;;526:11;513:10;:24;;;;295:250;;90:1220;;;;;;",
-  "deployedSourceMap": "90:1220:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;554:578;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;554:578:1;;;;;;;;;;;;;;;;;:::i;:::-;;1140:167;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1140:167:1;;;:::i;:::-;;204:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;204:25:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;141:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;141:24:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;172:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;172:25:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;554:578;717:9;703:10;;687:15;:26;:39;679:48;;;;;;860:15;818:13;;;;;;;;;;;:23;;;850:4;818:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;818:38:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;818:38:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;818:38:1;;;;;;;;;;;;;;;;:57;;810:66;;;;;;984:13;;;;;;;;;;;:22;;;1007:10;1019:15;984:51;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;984:51:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;984:51:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;984:51:1;;;;;;;;;;;;;;;;976:60;;;;;;1061:15;1047:10;;:29;;;;;;;;;;;1092:32;1096:10;1108:15;1092:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;554:578;:::o;1140:167::-;1199:5;;;;;;;;;;;1185:19;;:10;:19;;;1177:28;;;;;;1224:13;;;;;;;;;;;:22;;;1247:10;1259:13;;;;;;;;;;;:23;;;1291:4;1259:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1259:38:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1259:38:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1259:38:1;;;;;;;;;;;;;;;;1224:74;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1224:74:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1224:74:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1224:74:1;;;;;;;;;;;;;;;;1216:83;;;;;;1140:167::o;204:25::-;;;;:::o;141:24::-;;;;;;;;;;;;;:::o;172:25::-;;;;:::o",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.21 <0.7.0;\r\nimport './Cow.sol';\r\n\r\ncontract CowTokenSale {\r\n\r\n    address admin;\r\n    Cow public tokenContract;\r\n    uint256 public tokenPrice;\r\n    uint256 public tokensSold;\r\n\r\n    event Buy(address buyer, uint256 numberOfTokens);\r\n\r\n    constructor (Cow _tokenContract, uint256 _tokenPrice) public {\r\n        //Assign an admin\r\n        admin = msg.sender;\r\n        //Token Contract\r\n        tokenContract = _tokenContract;\r\n        //Token Price\r\n        tokenPrice = _tokenPrice;\r\n    } \r\n\r\n    function buyTokens(uint256 _numberOfTokens) public payable {\r\n        //Verify buyer is sending right amount of eth\r\n        require(_numberOfTokens*tokenPrice == msg.value);\r\n        //Verify the token sale contract has sufficient tokens to sell\r\n        require(tokenContract.balanceOf(address(this)) >= _numberOfTokens);\r\n        //Call transfer method from main contract, using balance of token sale contract\r\n        require(tokenContract.transfer(msg.sender, _numberOfTokens));\r\n        tokensSold += _numberOfTokens;\r\n        emit Buy(msg.sender, _numberOfTokens);\r\n    }\r\n\r\n    function endSale() public {\r\n        require(msg.sender == admin);\r\n        require(tokenContract.transfer(msg.sender, tokenContract.balanceOf(address(this))));\r\n    }\r\n}",
-  "sourcePath": "C:/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/CowTokenSale.sol",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract DRaju\",\"name\":\"_tokenContract\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_tokenPrice\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"buyer\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"numberOfTokens\",\"type\":\"uint256\"}],\"name\":\"Buy\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_numberOfTokens\",\"type\":\"uint256\"}],\"name\":\"buyTokens\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"endSale\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"internalType\":\"contract DRaju\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokensSold\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/DRajuTokenSale.sol\":\"DRajuTokenSale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/DRaju.sol\":{\"keccak256\":\"0xa4efd4ead22294ba94283b44a4ee3e1ab4adc6569546049f0368f7547dd036bb\",\"urls\":[\"bzz-raw://f1acbc5e195cdc573ed57f34db5833c8cd6ff081f18885f2d831632406ac3f37\",\"dweb:/ipfs/QmZ7e9SYqjzkFNszNDsLygh38ihuFPGxYc9yLVDjjrdQM7\"]},\"/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/DRajuTokenSale.sol\":{\"keccak256\":\"0x1834fcf419d68cde695c9384a06f90f2bd488234b49d5b1bbef5854c64642e5b\",\"urls\":[\"bzz-raw://22e551b8aa433386cc692cb5770baa6dc4c2dc713a4b51f947e80b855f3af3de\",\"dweb:/ipfs/QmSSEhZgqAAAJrZW6vWsCQEiJYYcRYJ2wFUZy8kXVtgBmD\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516107113803806107118339818101604052604081101561003357600080fd5b810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600281905550505061062a806100e76000396000f3fe60806040526004361061004a5760003560e01c80633610724e1461004f578063380d831b1461007d578063518ab2a81461009457806355a373d6146100bf5780637ff9b59614610116575b600080fd5b61007b6004803603602081101561006557600080fd5b8101908080359060200190929190505050610141565b005b34801561008957600080fd5b506100926103a2565b005b3480156100a057600080fd5b506100a96105c3565b6040518082815260200191505060405180910390f35b3480156100cb57600080fd5b506100d46105c9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012257600080fd5b5061012b6105ef565b6040518082815260200191505060405180910390f35b3460025482021461015157600080fd5b80600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101f157600080fd5b505afa158015610205573d6000803e3d6000fd5b505050506040513d602081101561021b57600080fd5b8101908080519060200190929190505050101561023757600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156102e057600080fd5b505af11580156102f4573d6000803e3d6000fd5b505050506040513d602081101561030a57600080fd5b810190808051906020019092919050505061032457600080fd5b806003600082825401925050819055507fe3d4187f6ca4248660cc0ac8b8056515bac4a8132be2eca31d6d0cc170722a7e3382604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146103fb57600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156104d957600080fd5b505afa1580156104ed573d6000803e3d6000fd5b505050506040513d602081101561050357600080fd5b81019080805190602001909291905050506040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561057d57600080fd5b505af1158015610591573d6000803e3d6000fd5b505050506040513d60208110156105a757600080fd5b81019080805190602001909291905050506105c157600080fd5b565b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6002548156fea265627a7a72315820065890765e15a8026cb298c26155afc89dee59c0b1ffd258db969f95838a3d6264736f6c63430005100032",
+  "deployedBytecode": "0x60806040526004361061004a5760003560e01c80633610724e1461004f578063380d831b1461007d578063518ab2a81461009457806355a373d6146100bf5780637ff9b59614610116575b600080fd5b61007b6004803603602081101561006557600080fd5b8101908080359060200190929190505050610141565b005b34801561008957600080fd5b506100926103a2565b005b3480156100a057600080fd5b506100a96105c3565b6040518082815260200191505060405180910390f35b3480156100cb57600080fd5b506100d46105c9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012257600080fd5b5061012b6105ef565b6040518082815260200191505060405180910390f35b3460025482021461015157600080fd5b80600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101f157600080fd5b505afa158015610205573d6000803e3d6000fd5b505050506040513d602081101561021b57600080fd5b8101908080519060200190929190505050101561023757600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156102e057600080fd5b505af11580156102f4573d6000803e3d6000fd5b505050506040513d602081101561030a57600080fd5b810190808051906020019092919050505061032457600080fd5b806003600082825401925050819055507fe3d4187f6ca4248660cc0ac8b8056515bac4a8132be2eca31d6d0cc170722a7e3382604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146103fb57600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156104d957600080fd5b505afa1580156104ed573d6000803e3d6000fd5b505050506040513d602081101561050357600080fd5b81019080805190602001909291905050506040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b15801561057d57600080fd5b505af1158015610591573d6000803e3d6000fd5b505050506040513d60208110156105a757600080fd5b81019080805190602001909291905050506105c157600080fd5b565b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6002548156fea265627a7a72315820065890765e15a8026cb298c26155afc89dee59c0b1ffd258db969f95838a3d6264736f6c63430005100032",
+  "sourceMap": "92:1226:1:-;;;301:252;8:9:-1;5:2;;;30:1;27;20:12;5:2;301:252:1;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;301:252:1;;;;;;;;;;;;;;;;;;;;;;;;;410:10;402:5;;:18;;;;;;;;;;;;;;;;;;473:14;457:13;;:30;;;;;;;;;;;;;;;;;;534:11;521:10;:24;;;;301:252;;92:1226;;;;;;",
+  "deployedSourceMap": "92:1226:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;562:578;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;562:578:1;;;;;;;;;;;;;;;;;:::i;:::-;;1148:167;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1148:167:1;;;:::i;:::-;;210:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;210:25:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;145:26;;8:9:-1;5:2;;;30:1;27;20:12;5:2;145:26:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;178:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;178:25:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;562:578;725:9;711:10;;695:15;:26;:39;687:48;;;;;;868:15;826:13;;;;;;;;;;;:23;;;858:4;826:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;826:38:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;826:38:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;826:38:1;;;;;;;;;;;;;;;;:57;;818:66;;;;;;992:13;;;;;;;;;;;:22;;;1015:10;1027:15;992:51;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;992:51:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;992:51:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;992:51:1;;;;;;;;;;;;;;;;984:60;;;;;;1069:15;1055:10;;:29;;;;;;;;;;;1100:32;1104:10;1116:15;1100:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;562:578;:::o;1148:167::-;1207:5;;;;;;;;;;;1193:19;;:10;:19;;;1185:28;;;;;;1232:13;;;;;;;;;;;:22;;;1255:10;1267:13;;;;;;;;;;;:23;;;1299:4;1267:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1267:38:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1267:38:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1267:38:1;;;;;;;;;;;;;;;;1232:74;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1232:74:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1232:74:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1232:74:1;;;;;;;;;;;;;;;;1224:83;;;;;;1148:167::o;210:25::-;;;;:::o;145:26::-;;;;;;;;;;;;;:::o;178:25::-;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.21 <0.7.0;\r\nimport './DRaju.sol';\r\n\r\ncontract DRajuTokenSale {\r\n\r\n    address admin;\r\n    DRaju public tokenContract;\r\n    uint256 public tokenPrice;\r\n    uint256 public tokensSold;\r\n\r\n    event Buy(address buyer, uint256 numberOfTokens);\r\n\r\n    constructor (DRaju _tokenContract, uint256 _tokenPrice) public {\r\n        //Assign an admin\r\n        admin = msg.sender;\r\n        //Token Contract\r\n        tokenContract = _tokenContract;\r\n        //Token Price\r\n        tokenPrice = _tokenPrice;\r\n    } \r\n\r\n    function buyTokens(uint256 _numberOfTokens) public payable {\r\n        //Verify buyer is sending right amount of eth\r\n        require(_numberOfTokens*tokenPrice == msg.value);\r\n        //Verify the token sale contract has sufficient tokens to sell\r\n        require(tokenContract.balanceOf(address(this)) >= _numberOfTokens);\r\n        //Call transfer method from main contract, using balance of token sale contract\r\n        require(tokenContract.transfer(msg.sender, _numberOfTokens));\r\n        tokensSold += _numberOfTokens;\r\n        emit Buy(msg.sender, _numberOfTokens);\r\n    }\r\n\r\n    function endSale() public {\r\n        require(msg.sender == admin);\r\n        require(tokenContract.transfer(msg.sender, tokenContract.balanceOf(address(this))));\r\n    }\r\n}",
+  "sourcePath": "C:/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/DRajuTokenSale.sol",
   "ast": {
-    "absolutePath": "/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/CowTokenSale.sol",
+    "absolutePath": "/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/DRajuTokenSale.sol",
     "exportedSymbols": {
-      "CowTokenSale": [
+      "DRajuTokenSale": [
         291
       ]
     },
@@ -139,13 +139,13 @@
         "src": "33:32:1"
       },
       {
-        "absolutePath": "/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/Cow.sol",
-        "file": "./Cow.sol",
+        "absolutePath": "/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/DRaju.sol",
+        "file": "./DRaju.sol",
         "id": 185,
         "nodeType": "ImportDirective",
         "scope": 292,
         "sourceUnit": 183,
-        "src": "67:19:1",
+        "src": "67:21:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -159,7 +159,7 @@
         "linearizedBaseContracts": [
           291
         ],
-        "name": "CowTokenSale",
+        "name": "DRajuTokenSale",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
@@ -168,7 +168,7 @@
             "name": "admin",
             "nodeType": "VariableDeclaration",
             "scope": 291,
-            "src": "121:13:1",
+            "src": "125:13:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -179,7 +179,7 @@
               "id": 186,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "121:7:1",
+              "src": "125:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -195,23 +195,23 @@
             "name": "tokenContract",
             "nodeType": "VariableDeclaration",
             "scope": 291,
-            "src": "141:24:1",
+            "src": "145:26:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Cow_$182",
-              "typeString": "contract Cow"
+              "typeIdentifier": "t_contract$_DRaju_$182",
+              "typeString": "contract DRaju"
             },
             "typeName": {
               "contractScope": null,
               "id": 188,
-              "name": "Cow",
+              "name": "DRaju",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 182,
-              "src": "141:3:1",
+              "src": "145:5:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Cow_$182",
-                "typeString": "contract Cow"
+                "typeIdentifier": "t_contract$_DRaju_$182",
+                "typeString": "contract DRaju"
               }
             },
             "value": null,
@@ -223,7 +223,7 @@
             "name": "tokenPrice",
             "nodeType": "VariableDeclaration",
             "scope": 291,
-            "src": "172:25:1",
+            "src": "178:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -234,7 +234,7 @@
               "id": 190,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "172:7:1",
+              "src": "178:7:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -249,7 +249,7 @@
             "name": "tokensSold",
             "nodeType": "VariableDeclaration",
             "scope": 291,
-            "src": "204:25:1",
+            "src": "210:25:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -260,7 +260,7 @@
               "id": 192,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "204:7:1",
+              "src": "210:7:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -286,7 +286,7 @@
                   "name": "buyer",
                   "nodeType": "VariableDeclaration",
                   "scope": 199,
-                  "src": "248:13:1",
+                  "src": "254:13:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -297,7 +297,7 @@
                     "id": 194,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "248:7:1",
+                    "src": "254:7:1",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -314,7 +314,7 @@
                   "name": "numberOfTokens",
                   "nodeType": "VariableDeclaration",
                   "scope": 199,
-                  "src": "263:22:1",
+                  "src": "269:22:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -325,7 +325,7 @@
                     "id": 196,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "263:7:1",
+                    "src": "269:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -335,15 +335,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "247:39:1"
+              "src": "253:39:1"
             },
-            "src": "238:49:1"
+            "src": "244:49:1"
           },
           {
             "body": {
               "id": 219,
               "nodeType": "Block",
-              "src": "356:189:1",
+              "src": "364:189:1",
               "statements": [
                 {
                   "expression": {
@@ -360,7 +360,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 187,
-                      "src": "394:5:1",
+                      "src": "402:5:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -377,7 +377,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 306,
-                        "src": "402:3:1",
+                        "src": "410:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
@@ -391,13 +391,13 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "402:10:1",
+                      "src": "410:10:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
                         "typeString": "address payable"
                       }
                     },
-                    "src": "394:18:1",
+                    "src": "402:18:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -405,7 +405,7 @@
                   },
                   "id": 210,
                   "nodeType": "ExpressionStatement",
-                  "src": "394:18:1"
+                  "src": "402:18:1"
                 },
                 {
                   "expression": {
@@ -422,10 +422,10 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 189,
-                      "src": "449:13:1",
+                      "src": "457:13:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Cow_$182",
-                        "typeString": "contract Cow"
+                        "typeIdentifier": "t_contract$_DRaju_$182",
+                        "typeString": "contract DRaju"
                       }
                     },
                     "nodeType": "Assignment",
@@ -437,21 +437,21 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 201,
-                      "src": "465:14:1",
+                      "src": "473:14:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Cow_$182",
-                        "typeString": "contract Cow"
+                        "typeIdentifier": "t_contract$_DRaju_$182",
+                        "typeString": "contract DRaju"
                       }
                     },
-                    "src": "449:30:1",
+                    "src": "457:30:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Cow_$182",
-                      "typeString": "contract Cow"
+                      "typeIdentifier": "t_contract$_DRaju_$182",
+                      "typeString": "contract DRaju"
                     }
                   },
                   "id": 214,
                   "nodeType": "ExpressionStatement",
-                  "src": "449:30:1"
+                  "src": "457:30:1"
                 },
                 {
                   "expression": {
@@ -468,7 +468,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 191,
-                      "src": "513:10:1",
+                      "src": "521:10:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -483,13 +483,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 203,
-                      "src": "526:11:1",
+                      "src": "534:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "513:24:1",
+                    "src": "521:24:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -497,7 +497,7 @@
                   },
                   "id": 218,
                   "nodeType": "ExpressionStatement",
-                  "src": "513:24:1"
+                  "src": "521:24:1"
                 }
               ]
             },
@@ -518,23 +518,23 @@
                   "name": "_tokenContract",
                   "nodeType": "VariableDeclaration",
                   "scope": 220,
-                  "src": "308:18:1",
+                  "src": "314:20:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Cow_$182",
-                    "typeString": "contract Cow"
+                    "typeIdentifier": "t_contract$_DRaju_$182",
+                    "typeString": "contract DRaju"
                   },
                   "typeName": {
                     "contractScope": null,
                     "id": 200,
-                    "name": "Cow",
+                    "name": "DRaju",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 182,
-                    "src": "308:3:1",
+                    "src": "314:5:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Cow_$182",
-                      "typeString": "contract Cow"
+                      "typeIdentifier": "t_contract$_DRaju_$182",
+                      "typeString": "contract DRaju"
                     }
                   },
                   "value": null,
@@ -546,7 +546,7 @@
                   "name": "_tokenPrice",
                   "nodeType": "VariableDeclaration",
                   "scope": 220,
-                  "src": "328:19:1",
+                  "src": "336:19:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -557,7 +557,7 @@
                     "id": 202,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "328:7:1",
+                    "src": "336:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -567,16 +567,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "307:41:1"
+              "src": "313:43:1"
             },
             "returnParameters": {
               "id": 205,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "356:0:1"
+              "src": "364:0:1"
             },
             "scope": 291,
-            "src": "295:250:1",
+            "src": "301:252:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
@@ -585,7 +585,7 @@
             "body": {
               "id": 264,
               "nodeType": "Block",
-              "src": "613:519:1",
+              "src": "621:519:1",
               "statements": [
                 {
                   "expression": {
@@ -620,7 +620,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 222,
-                            "src": "687:15:1",
+                            "src": "695:15:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -635,13 +635,13 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 191,
-                            "src": "703:10:1",
+                            "src": "711:10:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "687:26:1",
+                          "src": "695:26:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -658,7 +658,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 306,
-                            "src": "717:3:1",
+                            "src": "725:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
@@ -672,13 +672,13 @@
                           "memberName": "value",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "717:9:1",
+                          "src": "725:9:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "src": "687:39:1",
+                        "src": "695:39:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -700,7 +700,7 @@
                         310
                       ],
                       "referencedDeclaration": 309,
-                      "src": "679:7:1",
+                      "src": "687:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
@@ -714,7 +714,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "679:48:1",
+                    "src": "687:48:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -722,7 +722,7 @@
                   },
                   "id": 233,
                   "nodeType": "ExpressionStatement",
-                  "src": "679:48:1"
+                  "src": "687:48:1"
                 },
                 {
                   "expression": {
@@ -752,18 +752,18 @@
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
                                   "referencedDeclaration": 322,
-                                  "src": "850:4:1",
+                                  "src": "858:4:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_CowTokenSale_$291",
-                                    "typeString": "contract CowTokenSale"
+                                    "typeIdentifier": "t_contract$_DRajuTokenSale_$291",
+                                    "typeString": "contract DRajuTokenSale"
                                   }
                                 }
                               ],
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_contract$_CowTokenSale_$291",
-                                    "typeString": "contract CowTokenSale"
+                                    "typeIdentifier": "t_contract$_DRajuTokenSale_$291",
+                                    "typeString": "contract DRajuTokenSale"
                                   }
                                 ],
                                 "id": 237,
@@ -772,7 +772,7 @@
                                 "isPure": true,
                                 "lValueRequested": false,
                                 "nodeType": "ElementaryTypeNameExpression",
-                                "src": "842:7:1",
+                                "src": "850:7:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_type$_t_address_$",
                                   "typeString": "type(address)"
@@ -787,7 +787,7 @@
                               "lValueRequested": false,
                               "names": [],
                               "nodeType": "FunctionCall",
-                              "src": "842:13:1",
+                              "src": "850:13:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
                                 "typeString": "address"
@@ -808,10 +808,10 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 189,
-                              "src": "818:13:1",
+                              "src": "826:13:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_Cow_$182",
-                                "typeString": "contract Cow"
+                                "typeIdentifier": "t_contract$_DRaju_$182",
+                                "typeString": "contract DRaju"
                               }
                             },
                             "id": 236,
@@ -822,7 +822,7 @@
                             "memberName": "balanceOf",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": 13,
-                            "src": "818:23:1",
+                            "src": "826:23:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                               "typeString": "function (address) view external returns (uint256)"
@@ -836,7 +836,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "818:38:1",
+                          "src": "826:38:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -851,13 +851,13 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 222,
-                          "src": "860:15:1",
+                          "src": "868:15:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "src": "818:57:1",
+                        "src": "826:57:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -879,7 +879,7 @@
                         310
                       ],
                       "referencedDeclaration": 309,
-                      "src": "810:7:1",
+                      "src": "818:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
@@ -893,7 +893,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "810:66:1",
+                    "src": "818:66:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -901,7 +901,7 @@
                   },
                   "id": 244,
                   "nodeType": "ExpressionStatement",
-                  "src": "810:66:1"
+                  "src": "818:66:1"
                 },
                 {
                   "expression": {
@@ -919,7 +919,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 306,
-                              "src": "1007:3:1",
+                              "src": "1015:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
                                 "typeString": "msg"
@@ -933,7 +933,7 @@
                             "memberName": "sender",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": null,
-                            "src": "1007:10:1",
+                            "src": "1015:10:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address_payable",
                               "typeString": "address payable"
@@ -946,7 +946,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 222,
-                            "src": "1019:15:1",
+                            "src": "1027:15:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -971,10 +971,10 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 189,
-                            "src": "984:13:1",
+                            "src": "992:13:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Cow_$182",
-                              "typeString": "contract Cow"
+                              "typeIdentifier": "t_contract$_DRaju_$182",
+                              "typeString": "contract DRaju"
                             }
                           },
                           "id": 247,
@@ -985,7 +985,7 @@
                           "memberName": "transfer",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": 93,
-                          "src": "984:22:1",
+                          "src": "992:22:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
                             "typeString": "function (address,uint256) external returns (bool)"
@@ -999,7 +999,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "984:51:1",
+                        "src": "992:51:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1021,7 +1021,7 @@
                         310
                       ],
                       "referencedDeclaration": 309,
-                      "src": "976:7:1",
+                      "src": "984:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
@@ -1035,7 +1035,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "976:60:1",
+                    "src": "984:60:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1043,7 +1043,7 @@
                   },
                   "id": 253,
                   "nodeType": "ExpressionStatement",
-                  "src": "976:60:1"
+                  "src": "984:60:1"
                 },
                 {
                   "expression": {
@@ -1060,7 +1060,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 193,
-                      "src": "1047:10:1",
+                      "src": "1055:10:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1075,13 +1075,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 222,
-                      "src": "1061:15:1",
+                      "src": "1069:15:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1047:29:1",
+                    "src": "1055:29:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1089,7 +1089,7 @@
                   },
                   "id": 257,
                   "nodeType": "ExpressionStatement",
-                  "src": "1047:29:1"
+                  "src": "1055:29:1"
                 },
                 {
                   "eventCall": {
@@ -1104,7 +1104,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 306,
-                          "src": "1096:3:1",
+                          "src": "1104:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -1118,7 +1118,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1096:10:1",
+                        "src": "1104:10:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -1131,7 +1131,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 222,
-                        "src": "1108:15:1",
+                        "src": "1116:15:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1154,7 +1154,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 199,
-                      "src": "1092:3:1",
+                      "src": "1100:3:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
@@ -1168,7 +1168,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1092:32:1",
+                    "src": "1100:32:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1176,7 +1176,7 @@
                   },
                   "id": 263,
                   "nodeType": "EmitStatement",
-                  "src": "1087:37:1"
+                  "src": "1095:37:1"
                 }
               ]
             },
@@ -1197,7 +1197,7 @@
                   "name": "_numberOfTokens",
                   "nodeType": "VariableDeclaration",
                   "scope": 265,
-                  "src": "573:23:1",
+                  "src": "581:23:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1208,7 +1208,7 @@
                     "id": 221,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "573:7:1",
+                    "src": "581:7:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1218,16 +1218,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "572:25:1"
+              "src": "580:25:1"
             },
             "returnParameters": {
               "id": 224,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "613:0:1"
+              "src": "621:0:1"
             },
             "scope": 291,
-            "src": "554:578:1",
+            "src": "562:578:1",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
@@ -1236,7 +1236,7 @@
             "body": {
               "id": 289,
               "nodeType": "Block",
-              "src": "1166:141:1",
+              "src": "1174:141:1",
               "statements": [
                 {
                   "expression": {
@@ -1262,7 +1262,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 306,
-                            "src": "1185:3:1",
+                            "src": "1193:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
@@ -1276,7 +1276,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "1185:10:1",
+                          "src": "1193:10:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
@@ -1291,13 +1291,13 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 187,
-                          "src": "1199:5:1",
+                          "src": "1207:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "1185:19:1",
+                        "src": "1193:19:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1319,7 +1319,7 @@
                         310
                       ],
                       "referencedDeclaration": 309,
-                      "src": "1177:7:1",
+                      "src": "1185:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
@@ -1333,7 +1333,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1177:28:1",
+                    "src": "1185:28:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1341,7 +1341,7 @@
                   },
                   "id": 274,
                   "nodeType": "ExpressionStatement",
-                  "src": "1177:28:1"
+                  "src": "1185:28:1"
                 },
                 {
                   "expression": {
@@ -1359,7 +1359,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 306,
-                              "src": "1247:3:1",
+                              "src": "1255:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
                                 "typeString": "msg"
@@ -1373,7 +1373,7 @@
                             "memberName": "sender",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": null,
-                            "src": "1247:10:1",
+                            "src": "1255:10:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address_payable",
                               "typeString": "address payable"
@@ -1392,18 +1392,18 @@
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
                                     "referencedDeclaration": 322,
-                                    "src": "1291:4:1",
+                                    "src": "1299:4:1",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_CowTokenSale_$291",
-                                      "typeString": "contract CowTokenSale"
+                                      "typeIdentifier": "t_contract$_DRajuTokenSale_$291",
+                                      "typeString": "contract DRajuTokenSale"
                                     }
                                   }
                                 ],
                                 "expression": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_CowTokenSale_$291",
-                                      "typeString": "contract CowTokenSale"
+                                      "typeIdentifier": "t_contract$_DRajuTokenSale_$291",
+                                      "typeString": "contract DRajuTokenSale"
                                     }
                                   ],
                                   "id": 282,
@@ -1412,7 +1412,7 @@
                                   "isPure": true,
                                   "lValueRequested": false,
                                   "nodeType": "ElementaryTypeNameExpression",
-                                  "src": "1283:7:1",
+                                  "src": "1291:7:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_type$_t_address_$",
                                     "typeString": "type(address)"
@@ -1427,7 +1427,7 @@
                                 "lValueRequested": false,
                                 "names": [],
                                 "nodeType": "FunctionCall",
-                                "src": "1283:13:1",
+                                "src": "1291:13:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_address",
                                   "typeString": "address"
@@ -1448,10 +1448,10 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 189,
-                                "src": "1259:13:1",
+                                "src": "1267:13:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_Cow_$182",
-                                  "typeString": "contract Cow"
+                                  "typeIdentifier": "t_contract$_DRaju_$182",
+                                  "typeString": "contract DRaju"
                                 }
                               },
                               "id": 281,
@@ -1462,7 +1462,7 @@
                               "memberName": "balanceOf",
                               "nodeType": "MemberAccess",
                               "referencedDeclaration": 13,
-                              "src": "1259:23:1",
+                              "src": "1267:23:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                                 "typeString": "function (address) view external returns (uint256)"
@@ -1476,7 +1476,7 @@
                             "lValueRequested": false,
                             "names": [],
                             "nodeType": "FunctionCall",
-                            "src": "1259:38:1",
+                            "src": "1267:38:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -1501,10 +1501,10 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 189,
-                            "src": "1224:13:1",
+                            "src": "1232:13:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Cow_$182",
-                              "typeString": "contract Cow"
+                              "typeIdentifier": "t_contract$_DRaju_$182",
+                              "typeString": "contract DRaju"
                             }
                           },
                           "id": 277,
@@ -1515,7 +1515,7 @@
                           "memberName": "transfer",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": 93,
-                          "src": "1224:22:1",
+                          "src": "1232:22:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
                             "typeString": "function (address,uint256) external returns (bool)"
@@ -1529,7 +1529,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "1224:74:1",
+                        "src": "1232:74:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1551,7 +1551,7 @@
                         310
                       ],
                       "referencedDeclaration": 309,
-                      "src": "1216:7:1",
+                      "src": "1224:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
@@ -1565,7 +1565,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1216:83:1",
+                    "src": "1224:83:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1573,7 +1573,7 @@
                   },
                   "id": 288,
                   "nodeType": "ExpressionStatement",
-                  "src": "1216:83:1"
+                  "src": "1224:83:1"
                 }
               ]
             },
@@ -1588,32 +1588,32 @@
               "id": 266,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1156:2:1"
+              "src": "1164:2:1"
             },
             "returnParameters": {
               "id": 267,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1166:0:1"
+              "src": "1174:0:1"
             },
             "scope": 291,
-            "src": "1140:167:1",
+            "src": "1148:167:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 292,
-        "src": "90:1220:1"
+        "src": "92:1226:1"
       }
     ],
-    "src": "33:1277:1"
+    "src": "33:1285:1"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/CowTokenSale.sol",
+      "absolutePath": "/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/DRajuTokenSale.sol",
       "exportedSymbols": {
-        "CowTokenSale": [
+        "DRajuTokenSale": [
           291
         ]
       }
@@ -1638,8 +1638,8 @@
       {
         "attributes": {
           "SourceUnit": 183,
-          "absolutePath": "/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/Cow.sol",
-          "file": "./Cow.sol",
+          "absolutePath": "/C/Users/DARSHAN/Projects/ICO/ERC20Token-with-ICOpage/contracts/DRaju.sol",
+          "file": "./DRaju.sol",
           "scope": 292,
           "symbolAliases": [
             null
@@ -1648,7 +1648,7 @@
         },
         "id": 185,
         "name": "ImportDirective",
-        "src": "67:19:1"
+        "src": "67:21:1"
       },
       {
         "attributes": {
@@ -1664,7 +1664,7 @@
           "linearizedBaseContracts": [
             291
           ],
-          "name": "CowTokenSale",
+          "name": "DRajuTokenSale",
           "scope": 292
         },
         "children": [
@@ -1688,12 +1688,12 @@
                 },
                 "id": 186,
                 "name": "ElementaryTypeName",
-                "src": "121:7:1"
+                "src": "125:7:1"
               }
             ],
             "id": 187,
             "name": "VariableDeclaration",
-            "src": "121:13:1"
+            "src": "125:13:1"
           },
           {
             "attributes": {
@@ -1702,7 +1702,7 @@
               "scope": 291,
               "stateVariable": true,
               "storageLocation": "default",
-              "type": "contract Cow",
+              "type": "contract DRaju",
               "value": null,
               "visibility": "public"
             },
@@ -1710,18 +1710,18 @@
               {
                 "attributes": {
                   "contractScope": null,
-                  "name": "Cow",
+                  "name": "DRaju",
                   "referencedDeclaration": 182,
-                  "type": "contract Cow"
+                  "type": "contract DRaju"
                 },
                 "id": 188,
                 "name": "UserDefinedTypeName",
-                "src": "141:3:1"
+                "src": "145:5:1"
               }
             ],
             "id": 189,
             "name": "VariableDeclaration",
-            "src": "141:24:1"
+            "src": "145:26:1"
           },
           {
             "attributes": {
@@ -1742,12 +1742,12 @@
                 },
                 "id": 190,
                 "name": "ElementaryTypeName",
-                "src": "172:7:1"
+                "src": "178:7:1"
               }
             ],
             "id": 191,
             "name": "VariableDeclaration",
-            "src": "172:25:1"
+            "src": "178:25:1"
           },
           {
             "attributes": {
@@ -1768,12 +1768,12 @@
                 },
                 "id": 192,
                 "name": "ElementaryTypeName",
-                "src": "204:7:1"
+                "src": "210:7:1"
               }
             ],
             "id": 193,
             "name": "VariableDeclaration",
-            "src": "204:25:1"
+            "src": "210:25:1"
           },
           {
             "attributes": {
@@ -1805,12 +1805,12 @@
                         },
                         "id": 194,
                         "name": "ElementaryTypeName",
-                        "src": "248:7:1"
+                        "src": "254:7:1"
                       }
                     ],
                     "id": 195,
                     "name": "VariableDeclaration",
-                    "src": "248:13:1"
+                    "src": "254:13:1"
                   },
                   {
                     "attributes": {
@@ -1832,22 +1832,22 @@
                         },
                         "id": 196,
                         "name": "ElementaryTypeName",
-                        "src": "263:7:1"
+                        "src": "269:7:1"
                       }
                     ],
                     "id": 197,
                     "name": "VariableDeclaration",
-                    "src": "263:22:1"
+                    "src": "269:22:1"
                   }
                 ],
                 "id": 198,
                 "name": "ParameterList",
-                "src": "247:39:1"
+                "src": "253:39:1"
               }
             ],
             "id": 199,
             "name": "EventDefinition",
-            "src": "238:49:1"
+            "src": "244:49:1"
           },
           {
             "attributes": {
@@ -1874,7 +1874,7 @@
                       "scope": 220,
                       "stateVariable": false,
                       "storageLocation": "default",
-                      "type": "contract Cow",
+                      "type": "contract DRaju",
                       "value": null,
                       "visibility": "internal"
                     },
@@ -1882,18 +1882,18 @@
                       {
                         "attributes": {
                           "contractScope": null,
-                          "name": "Cow",
+                          "name": "DRaju",
                           "referencedDeclaration": 182,
-                          "type": "contract Cow"
+                          "type": "contract DRaju"
                         },
                         "id": 200,
                         "name": "UserDefinedTypeName",
-                        "src": "308:3:1"
+                        "src": "314:5:1"
                       }
                     ],
                     "id": 201,
                     "name": "VariableDeclaration",
-                    "src": "308:18:1"
+                    "src": "314:20:1"
                   },
                   {
                     "attributes": {
@@ -1914,17 +1914,17 @@
                         },
                         "id": 202,
                         "name": "ElementaryTypeName",
-                        "src": "328:7:1"
+                        "src": "336:7:1"
                       }
                     ],
                     "id": 203,
                     "name": "VariableDeclaration",
-                    "src": "328:19:1"
+                    "src": "336:19:1"
                   }
                 ],
                 "id": 204,
                 "name": "ParameterList",
-                "src": "307:41:1"
+                "src": "313:43:1"
               },
               {
                 "attributes": {
@@ -1935,7 +1935,7 @@
                 "children": [],
                 "id": 205,
                 "name": "ParameterList",
-                "src": "356:0:1"
+                "src": "364:0:1"
               },
               {
                 "children": [
@@ -1964,7 +1964,7 @@
                             },
                             "id": 206,
                             "name": "Identifier",
-                            "src": "394:5:1"
+                            "src": "402:5:1"
                           },
                           {
                             "attributes": {
@@ -1990,22 +1990,22 @@
                                 },
                                 "id": 207,
                                 "name": "Identifier",
-                                "src": "402:3:1"
+                                "src": "410:3:1"
                               }
                             ],
                             "id": 208,
                             "name": "MemberAccess",
-                            "src": "402:10:1"
+                            "src": "410:10:1"
                           }
                         ],
                         "id": 209,
                         "name": "Assignment",
-                        "src": "394:18:1"
+                        "src": "402:18:1"
                       }
                     ],
                     "id": 210,
                     "name": "ExpressionStatement",
-                    "src": "394:18:1"
+                    "src": "402:18:1"
                   },
                   {
                     "children": [
@@ -2017,7 +2017,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "operator": "=",
-                          "type": "contract Cow"
+                          "type": "contract DRaju"
                         },
                         "children": [
                           {
@@ -2027,12 +2027,12 @@
                                 null
                               ],
                               "referencedDeclaration": 189,
-                              "type": "contract Cow",
+                              "type": "contract DRaju",
                               "value": "tokenContract"
                             },
                             "id": 211,
                             "name": "Identifier",
-                            "src": "449:13:1"
+                            "src": "457:13:1"
                           },
                           {
                             "attributes": {
@@ -2041,22 +2041,22 @@
                                 null
                               ],
                               "referencedDeclaration": 201,
-                              "type": "contract Cow",
+                              "type": "contract DRaju",
                               "value": "_tokenContract"
                             },
                             "id": 212,
                             "name": "Identifier",
-                            "src": "465:14:1"
+                            "src": "473:14:1"
                           }
                         ],
                         "id": 213,
                         "name": "Assignment",
-                        "src": "449:30:1"
+                        "src": "457:30:1"
                       }
                     ],
                     "id": 214,
                     "name": "ExpressionStatement",
-                    "src": "449:30:1"
+                    "src": "457:30:1"
                   },
                   {
                     "children": [
@@ -2083,7 +2083,7 @@
                             },
                             "id": 215,
                             "name": "Identifier",
-                            "src": "513:10:1"
+                            "src": "521:10:1"
                           },
                           {
                             "attributes": {
@@ -2097,27 +2097,27 @@
                             },
                             "id": 216,
                             "name": "Identifier",
-                            "src": "526:11:1"
+                            "src": "534:11:1"
                           }
                         ],
                         "id": 217,
                         "name": "Assignment",
-                        "src": "513:24:1"
+                        "src": "521:24:1"
                       }
                     ],
                     "id": 218,
                     "name": "ExpressionStatement",
-                    "src": "513:24:1"
+                    "src": "521:24:1"
                   }
                 ],
                 "id": 219,
                 "name": "Block",
-                "src": "356:189:1"
+                "src": "364:189:1"
               }
             ],
             "id": 220,
             "name": "FunctionDefinition",
-            "src": "295:250:1"
+            "src": "301:252:1"
           },
           {
             "attributes": {
@@ -2156,17 +2156,17 @@
                         },
                         "id": 221,
                         "name": "ElementaryTypeName",
-                        "src": "573:7:1"
+                        "src": "581:7:1"
                       }
                     ],
                     "id": 222,
                     "name": "VariableDeclaration",
-                    "src": "573:23:1"
+                    "src": "581:23:1"
                   }
                 ],
                 "id": 223,
                 "name": "ParameterList",
-                "src": "572:25:1"
+                "src": "580:25:1"
               },
               {
                 "attributes": {
@@ -2177,7 +2177,7 @@
                 "children": [],
                 "id": 224,
                 "name": "ParameterList",
-                "src": "613:0:1"
+                "src": "621:0:1"
               },
               {
                 "children": [
@@ -2216,7 +2216,7 @@
                             },
                             "id": 225,
                             "name": "Identifier",
-                            "src": "679:7:1"
+                            "src": "687:7:1"
                           },
                           {
                             "attributes": {
@@ -2260,7 +2260,7 @@
                                     },
                                     "id": 226,
                                     "name": "Identifier",
-                                    "src": "687:15:1"
+                                    "src": "695:15:1"
                                   },
                                   {
                                     "attributes": {
@@ -2274,12 +2274,12 @@
                                     },
                                     "id": 227,
                                     "name": "Identifier",
-                                    "src": "703:10:1"
+                                    "src": "711:10:1"
                                   }
                                 ],
                                 "id": 228,
                                 "name": "BinaryOperation",
-                                "src": "687:26:1"
+                                "src": "695:26:1"
                               },
                               {
                                 "attributes": {
@@ -2305,27 +2305,27 @@
                                     },
                                     "id": 229,
                                     "name": "Identifier",
-                                    "src": "717:3:1"
+                                    "src": "725:3:1"
                                   }
                                 ],
                                 "id": 230,
                                 "name": "MemberAccess",
-                                "src": "717:9:1"
+                                "src": "725:9:1"
                               }
                             ],
                             "id": 231,
                             "name": "BinaryOperation",
-                            "src": "687:39:1"
+                            "src": "695:39:1"
                           }
                         ],
                         "id": 232,
                         "name": "FunctionCall",
-                        "src": "679:48:1"
+                        "src": "687:48:1"
                       }
                     ],
                     "id": 233,
                     "name": "ExpressionStatement",
-                    "src": "679:48:1"
+                    "src": "687:48:1"
                   },
                   {
                     "children": [
@@ -2362,7 +2362,7 @@
                             },
                             "id": 234,
                             "name": "Identifier",
-                            "src": "810:7:1"
+                            "src": "818:7:1"
                           },
                           {
                             "attributes": {
@@ -2418,17 +2418,17 @@
                                             null
                                           ],
                                           "referencedDeclaration": 189,
-                                          "type": "contract Cow",
+                                          "type": "contract DRaju",
                                           "value": "tokenContract"
                                         },
                                         "id": 235,
                                         "name": "Identifier",
-                                        "src": "818:13:1"
+                                        "src": "826:13:1"
                                       }
                                     ],
                                     "id": 236,
                                     "name": "MemberAccess",
-                                    "src": "818:23:1"
+                                    "src": "826:23:1"
                                   },
                                   {
                                     "attributes": {
@@ -2449,8 +2449,8 @@
                                         "attributes": {
                                           "argumentTypes": [
                                             {
-                                              "typeIdentifier": "t_contract$_CowTokenSale_$291",
-                                              "typeString": "contract CowTokenSale"
+                                              "typeIdentifier": "t_contract$_DRajuTokenSale_$291",
+                                              "typeString": "contract DRajuTokenSale"
                                             }
                                           ],
                                           "isConstant": false,
@@ -2462,7 +2462,7 @@
                                         },
                                         "id": 237,
                                         "name": "ElementaryTypeNameExpression",
-                                        "src": "842:7:1"
+                                        "src": "850:7:1"
                                       },
                                       {
                                         "attributes": {
@@ -2471,22 +2471,22 @@
                                             null
                                           ],
                                           "referencedDeclaration": 322,
-                                          "type": "contract CowTokenSale",
+                                          "type": "contract DRajuTokenSale",
                                           "value": "this"
                                         },
                                         "id": 238,
                                         "name": "Identifier",
-                                        "src": "850:4:1"
+                                        "src": "858:4:1"
                                       }
                                     ],
                                     "id": 239,
                                     "name": "FunctionCall",
-                                    "src": "842:13:1"
+                                    "src": "850:13:1"
                                   }
                                 ],
                                 "id": 240,
                                 "name": "FunctionCall",
-                                "src": "818:38:1"
+                                "src": "826:38:1"
                               },
                               {
                                 "attributes": {
@@ -2500,22 +2500,22 @@
                                 },
                                 "id": 241,
                                 "name": "Identifier",
-                                "src": "860:15:1"
+                                "src": "868:15:1"
                               }
                             ],
                             "id": 242,
                             "name": "BinaryOperation",
-                            "src": "818:57:1"
+                            "src": "826:57:1"
                           }
                         ],
                         "id": 243,
                         "name": "FunctionCall",
-                        "src": "810:66:1"
+                        "src": "818:66:1"
                       }
                     ],
                     "id": 244,
                     "name": "ExpressionStatement",
-                    "src": "810:66:1"
+                    "src": "818:66:1"
                   },
                   {
                     "children": [
@@ -2552,7 +2552,7 @@
                             },
                             "id": 245,
                             "name": "Identifier",
-                            "src": "976:7:1"
+                            "src": "984:7:1"
                           },
                           {
                             "attributes": {
@@ -2597,17 +2597,17 @@
                                         null
                                       ],
                                       "referencedDeclaration": 189,
-                                      "type": "contract Cow",
+                                      "type": "contract DRaju",
                                       "value": "tokenContract"
                                     },
                                     "id": 246,
                                     "name": "Identifier",
-                                    "src": "984:13:1"
+                                    "src": "992:13:1"
                                   }
                                 ],
                                 "id": 247,
                                 "name": "MemberAccess",
-                                "src": "984:22:1"
+                                "src": "992:22:1"
                               },
                               {
                                 "attributes": {
@@ -2633,12 +2633,12 @@
                                     },
                                     "id": 248,
                                     "name": "Identifier",
-                                    "src": "1007:3:1"
+                                    "src": "1015:3:1"
                                   }
                                 ],
                                 "id": 249,
                                 "name": "MemberAccess",
-                                "src": "1007:10:1"
+                                "src": "1015:10:1"
                               },
                               {
                                 "attributes": {
@@ -2652,22 +2652,22 @@
                                 },
                                 "id": 250,
                                 "name": "Identifier",
-                                "src": "1019:15:1"
+                                "src": "1027:15:1"
                               }
                             ],
                             "id": 251,
                             "name": "FunctionCall",
-                            "src": "984:51:1"
+                            "src": "992:51:1"
                           }
                         ],
                         "id": 252,
                         "name": "FunctionCall",
-                        "src": "976:60:1"
+                        "src": "984:60:1"
                       }
                     ],
                     "id": 253,
                     "name": "ExpressionStatement",
-                    "src": "976:60:1"
+                    "src": "984:60:1"
                   },
                   {
                     "children": [
@@ -2694,7 +2694,7 @@
                             },
                             "id": 254,
                             "name": "Identifier",
-                            "src": "1047:10:1"
+                            "src": "1055:10:1"
                           },
                           {
                             "attributes": {
@@ -2708,17 +2708,17 @@
                             },
                             "id": 255,
                             "name": "Identifier",
-                            "src": "1061:15:1"
+                            "src": "1069:15:1"
                           }
                         ],
                         "id": 256,
                         "name": "Assignment",
-                        "src": "1047:29:1"
+                        "src": "1055:29:1"
                       }
                     ],
                     "id": 257,
                     "name": "ExpressionStatement",
-                    "src": "1047:29:1"
+                    "src": "1055:29:1"
                   },
                   {
                     "children": [
@@ -2758,7 +2758,7 @@
                             },
                             "id": 258,
                             "name": "Identifier",
-                            "src": "1092:3:1"
+                            "src": "1100:3:1"
                           },
                           {
                             "attributes": {
@@ -2784,12 +2784,12 @@
                                 },
                                 "id": 259,
                                 "name": "Identifier",
-                                "src": "1096:3:1"
+                                "src": "1104:3:1"
                               }
                             ],
                             "id": 260,
                             "name": "MemberAccess",
-                            "src": "1096:10:1"
+                            "src": "1104:10:1"
                           },
                           {
                             "attributes": {
@@ -2803,27 +2803,27 @@
                             },
                             "id": 261,
                             "name": "Identifier",
-                            "src": "1108:15:1"
+                            "src": "1116:15:1"
                           }
                         ],
                         "id": 262,
                         "name": "FunctionCall",
-                        "src": "1092:32:1"
+                        "src": "1100:32:1"
                       }
                     ],
                     "id": 263,
                     "name": "EmitStatement",
-                    "src": "1087:37:1"
+                    "src": "1095:37:1"
                   }
                 ],
                 "id": 264,
                 "name": "Block",
-                "src": "613:519:1"
+                "src": "621:519:1"
               }
             ],
             "id": 265,
             "name": "FunctionDefinition",
-            "src": "554:578:1"
+            "src": "562:578:1"
           },
           {
             "attributes": {
@@ -2850,7 +2850,7 @@
                 "children": [],
                 "id": 266,
                 "name": "ParameterList",
-                "src": "1156:2:1"
+                "src": "1164:2:1"
               },
               {
                 "attributes": {
@@ -2861,7 +2861,7 @@
                 "children": [],
                 "id": 267,
                 "name": "ParameterList",
-                "src": "1166:0:1"
+                "src": "1174:0:1"
               },
               {
                 "children": [
@@ -2900,7 +2900,7 @@
                             },
                             "id": 268,
                             "name": "Identifier",
-                            "src": "1177:7:1"
+                            "src": "1185:7:1"
                           },
                           {
                             "attributes": {
@@ -2941,12 +2941,12 @@
                                     },
                                     "id": 269,
                                     "name": "Identifier",
-                                    "src": "1185:3:1"
+                                    "src": "1193:3:1"
                                   }
                                 ],
                                 "id": 270,
                                 "name": "MemberAccess",
-                                "src": "1185:10:1"
+                                "src": "1193:10:1"
                               },
                               {
                                 "attributes": {
@@ -2960,22 +2960,22 @@
                                 },
                                 "id": 271,
                                 "name": "Identifier",
-                                "src": "1199:5:1"
+                                "src": "1207:5:1"
                               }
                             ],
                             "id": 272,
                             "name": "BinaryOperation",
-                            "src": "1185:19:1"
+                            "src": "1193:19:1"
                           }
                         ],
                         "id": 273,
                         "name": "FunctionCall",
-                        "src": "1177:28:1"
+                        "src": "1185:28:1"
                       }
                     ],
                     "id": 274,
                     "name": "ExpressionStatement",
-                    "src": "1177:28:1"
+                    "src": "1185:28:1"
                   },
                   {
                     "children": [
@@ -3012,7 +3012,7 @@
                             },
                             "id": 275,
                             "name": "Identifier",
-                            "src": "1216:7:1"
+                            "src": "1224:7:1"
                           },
                           {
                             "attributes": {
@@ -3057,17 +3057,17 @@
                                         null
                                       ],
                                       "referencedDeclaration": 189,
-                                      "type": "contract Cow",
+                                      "type": "contract DRaju",
                                       "value": "tokenContract"
                                     },
                                     "id": 276,
                                     "name": "Identifier",
-                                    "src": "1224:13:1"
+                                    "src": "1232:13:1"
                                   }
                                 ],
                                 "id": 277,
                                 "name": "MemberAccess",
-                                "src": "1224:22:1"
+                                "src": "1232:22:1"
                               },
                               {
                                 "attributes": {
@@ -3093,12 +3093,12 @@
                                     },
                                     "id": 278,
                                     "name": "Identifier",
-                                    "src": "1247:3:1"
+                                    "src": "1255:3:1"
                                   }
                                 ],
                                 "id": 279,
                                 "name": "MemberAccess",
-                                "src": "1247:10:1"
+                                "src": "1255:10:1"
                               },
                               {
                                 "attributes": {
@@ -3139,17 +3139,17 @@
                                             null
                                           ],
                                           "referencedDeclaration": 189,
-                                          "type": "contract Cow",
+                                          "type": "contract DRaju",
                                           "value": "tokenContract"
                                         },
                                         "id": 280,
                                         "name": "Identifier",
-                                        "src": "1259:13:1"
+                                        "src": "1267:13:1"
                                       }
                                     ],
                                     "id": 281,
                                     "name": "MemberAccess",
-                                    "src": "1259:23:1"
+                                    "src": "1267:23:1"
                                   },
                                   {
                                     "attributes": {
@@ -3170,8 +3170,8 @@
                                         "attributes": {
                                           "argumentTypes": [
                                             {
-                                              "typeIdentifier": "t_contract$_CowTokenSale_$291",
-                                              "typeString": "contract CowTokenSale"
+                                              "typeIdentifier": "t_contract$_DRajuTokenSale_$291",
+                                              "typeString": "contract DRajuTokenSale"
                                             }
                                           ],
                                           "isConstant": false,
@@ -3183,7 +3183,7 @@
                                         },
                                         "id": 282,
                                         "name": "ElementaryTypeNameExpression",
-                                        "src": "1283:7:1"
+                                        "src": "1291:7:1"
                                       },
                                       {
                                         "attributes": {
@@ -3192,102 +3192,84 @@
                                             null
                                           ],
                                           "referencedDeclaration": 322,
-                                          "type": "contract CowTokenSale",
+                                          "type": "contract DRajuTokenSale",
                                           "value": "this"
                                         },
                                         "id": 283,
                                         "name": "Identifier",
-                                        "src": "1291:4:1"
+                                        "src": "1299:4:1"
                                       }
                                     ],
                                     "id": 284,
                                     "name": "FunctionCall",
-                                    "src": "1283:13:1"
+                                    "src": "1291:13:1"
                                   }
                                 ],
                                 "id": 285,
                                 "name": "FunctionCall",
-                                "src": "1259:38:1"
+                                "src": "1267:38:1"
                               }
                             ],
                             "id": 286,
                             "name": "FunctionCall",
-                            "src": "1224:74:1"
+                            "src": "1232:74:1"
                           }
                         ],
                         "id": 287,
                         "name": "FunctionCall",
-                        "src": "1216:83:1"
+                        "src": "1224:83:1"
                       }
                     ],
                     "id": 288,
                     "name": "ExpressionStatement",
-                    "src": "1216:83:1"
+                    "src": "1224:83:1"
                   }
                 ],
                 "id": 289,
                 "name": "Block",
-                "src": "1166:141:1"
+                "src": "1174:141:1"
               }
             ],
             "id": 290,
             "name": "FunctionDefinition",
-            "src": "1140:167:1"
+            "src": "1148:167:1"
           }
         ],
         "id": 291,
         "name": "ContractDefinition",
-        "src": "90:1220:1"
+        "src": "92:1226:1"
       }
     ],
     "id": 292,
     "name": "SourceUnit",
-    "src": "33:1277:1"
+    "src": "33:1285:1"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {
-    "1622201059651": {
-      "events": {},
-      "links": {},
-      "address": "0x9E3Cd257Bf2dDaf2e83E71b892d24D897Da4376B",
-      "transactionHash": "0xbcfcff55aa9535e3b66cfce1e0cb1a639f1efbc5873c252b9961ca41180a4959"
-    },
-    "1622218182615": {
-      "events": {},
-      "links": {},
-      "address": "0x36eAc72E2CC1893e54162dE09450B471Abf28692",
-      "transactionHash": "0xe23c0d8d9d92c4a93d7d4f72ac6753b78db8132cf892969bc847d010a2e0d6e1"
-    },
-    "1622340430203": {
-      "events": {},
-      "links": {},
-      "address": "0xB8dDEca04e8Be48c34B08Fd868Ae161cc784cb87",
-      "transactionHash": "0x099347b654ce1cd6124c4b368548173150f7605038b11c0843a6abb95df0f6af"
-    },
-    "1622345451579": {
-      "events": {},
-      "links": {},
-      "address": "0x41238Baa9bf95AA94A3A07E243931c6e5d00967B",
-      "transactionHash": "0xdc7c02bb80c819aba683fb743dfe610fdd21802edfad1333b6afadc4be25d197"
-    },
-    "1622346785210": {
-      "events": {},
-      "links": {},
-      "address": "0x6EC6Eca68eB2A99B11F84AB329AacFb6dbe9fe1e",
-      "transactionHash": "0x61dd85c2b7bc3192e3e2b052c4e6f90830bb0a0c4e96a0d6439f9466f2cf6b5a"
-    },
     "1625362689450": {
       "events": {},
       "links": {},
-      "address": "0x4AcBf0D2ED6C526641bA7d2347Efe30d3D503c7f",
-      "transactionHash": "0xa7a52e986ef00160cbffc26537df83ec70ead7e19c10774d1a3224500d664bc0"
+      "address": "0xC60882ac28ca0DbBF394B80A8485A22A00438c6A",
+      "transactionHash": "0x914a1cbae33428d3c83bcea34584420badbfd446dfab031a19bda6880b064678"
+    },
+    "1625367059837": {
+      "events": {},
+      "links": {},
+      "address": "0x836AFAb51eF7Df9B16ab9AB639027661fA8cD54A",
+      "transactionHash": "0x69201d2fce8bc0b8e10616ab7dc3ef75a1325555ca20a59b1917c2b0dd4ffe08"
+    },
+    "1625367985160": {
+      "events": {},
+      "links": {},
+      "address": "0x7D7a361da91Ab141f0d97EAb56d2dfcd9e3ee014",
+      "transactionHash": "0x8da133ef7387143019fd9d8d6d78681054b9a372a9b6a037feb60eb39ffd7dd2"
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-07-04T01:39:52.062Z",
+  "updatedAt": "2021-07-04T03:07:36.627Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

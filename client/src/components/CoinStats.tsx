@@ -13,7 +13,7 @@ const CoinStats = ({ tokensRemaining }: ICoinStats) => {
     <div className={classes.statsContainer}>
       <div className={classes.stat}>
         <div className={classes.title}>Price</div>
-        <div className={classes.subTitle}>1 Moo = 0.001 Eth</div>
+        <div className={classes.subTitle}>1 DRJU = 0.001 Eth</div>
       </div>
       <div className={classes.stat}>
         <div className={classes.title}>Market Cap in ETH</div>

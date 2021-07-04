@@ -1,33 +1,33 @@
-const Cow = artifacts.require("./Cow.sol");
+const DRaju = artifacts.require("./DRaju.sol");
 
-contract("Cow", async (accounts) => {
+contract("DRaju", async (accounts) => {
   it("Initialises with correct name.", async () => {
-    const tokenInstance = await Cow.deployed();
+    const tokenInstance = await DRaju.deployed();
 
     const name = await tokenInstance.name();
-    assert.equal(name, "Cow", "The token name was not Cow.");
+    assert.equal(name, "DRaju", "The token name was not DRaju.");
   });
 
   it("token supply should be 100000.", async () => {
-    const tokenInstance = await Cow.deployed();
+    const tokenInstance = await DRaju.deployed();
     const tokenSupply = await tokenInstance.totalSupply();
     assert.equal(tokenSupply, 100000, "The total supply was not 100000.");
   });
 
   it("initialises with correct symbol", async () => {
-    const tokenInstance = await Cow.deployed();
+    const tokenInstance = await DRaju.deployed();
     const symbol = await tokenInstance.symbol();
-    assert.equal(symbol, "MOO", "Symbol was not MOO");
+    assert.equal(symbol, "DRJU", "Symbol was not DRJU");
   });
 
   it("admin account recieves all token supply", async () => {
-    const tokenInstance = await Cow.deployed();
+    const tokenInstance = await DRaju.deployed();
     const adminBalance = await tokenInstance.balanceOf(accounts[0]);
     assert.equal(adminBalance, 100000, "Admin balance is not token supply");
   });
 
   it("Stops on buffer overflow transactions", async () => {
-    const tokenInstance = await Cow.deployed();
+    const tokenInstance = await DRaju.deployed();
     try {
       await tokenInstance.transfer.call(accounts[1], 99999999999999999999999, {
         from: accounts[0],
@@ -40,7 +40,7 @@ contract("Cow", async (accounts) => {
   });
 
   it("Fails on transcations with insufficient balance", async () => {
-    const tokenInstance = await Cow.deployed();
+    const tokenInstance = await DRaju.deployed();
     try {
       await tokenInstance.transfer.call(accounts[0], 1, {
         from: accounts[1],
@@ -53,7 +53,7 @@ contract("Cow", async (accounts) => {
   });
 
   it("Successfully makes transactions", async () => {
-    const tokenInstance = await Cow.deployed();
+    const tokenInstance = await DRaju.deployed();
 
     //Sending transaction
     const passedTransaction = await tokenInstance.transfer.call(
@@ -95,7 +95,7 @@ contract("Cow", async (accounts) => {
   });
 
   it("Can setup allowance", async () => {
-    const tokenInstance = await Cow.deployed();
+    const tokenInstance = await DRaju.deployed();
     const allowancelResponse = await tokenInstance.approve.call(
       accounts[1],
       50000,
@@ -132,7 +132,7 @@ contract("Cow", async (accounts) => {
       const spender = accounts[2];
 
       //Set allowance large than balance
-      const tokenInstance = await Cow.deployed();
+      const tokenInstance = await DRaju.deployed();
       const allowancelResponse = await tokenInstance.approve.call(
         allowanceTarget,
         500000,
@@ -163,7 +163,7 @@ contract("Cow", async (accounts) => {
     const spender = accounts[2];
     try {
       //Set allowance large than balance
-      const tokenInstance = await Cow.deployed();
+      const tokenInstance = await DRaju.deployed();
       const allowancelResponse = await tokenInstance.approve.call(
         allowanceTarget,
         1000,
@@ -193,7 +193,7 @@ contract("Cow", async (accounts) => {
     const spender = accounts[2];
 
     //Set allowance of 1000 for allowanceTarget
-    const tokenInstance = await Cow.deployed();
+    const tokenInstance = await DRaju.deployed();
     const allowancelResponse = await tokenInstance.approve(
       allowanceTarget,
       1000,
@@ -204,7 +204,7 @@ contract("Cow", async (accounts) => {
 
     //Verify spender initially had 0 balance
     const spenderBalanceBefore = await tokenInstance.balanceOf(spender);
-    assert.equal(spenderBalanceBefore, 0, "Spender already had Moo coins");
+    assert.equal(spenderBalanceBefore, 0, "Spender already had DRJU coins");
 
     //Transfer from allowanceTarget to spender
     const withdraw = await tokenInstance.transferFrom(

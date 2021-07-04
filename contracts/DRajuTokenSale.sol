@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.21 <0.7.0;
-import './Cow.sol';
+import './DRaju.sol';
 
-contract CowTokenSale {
+contract DRajuTokenSale {
 
     address admin;
-    Cow public tokenContract;
+    DRaju public tokenContract;
     uint256 public tokenPrice;
     uint256 public tokensSold;
 
     event Buy(address buyer, uint256 numberOfTokens);
 
-    constructor (Cow _tokenContract, uint256 _tokenPrice) public {
+    constructor (DRaju _tokenContract, uint256 _tokenPrice) public {
         //Assign an admin
         admin = msg.sender;
         //Token Contract

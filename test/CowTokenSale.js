@@ -1,13 +1,13 @@
-const CowTokenSale = artifacts.require("./CowTokenSale.sol");
-const Cow = artifacts.require("./Cow.sol");
+const DRajuTokenSale = artifacts.require("./DRajuTokenSale.sol");
+const DRaju = artifacts.require("./DRaju.sol");
 
-contract("CowTokenSale", (accounts) => {
+contract("DRajuTokenSale", (accounts) => {
   const tokenPrice = 1000000000000000; //in wei
   const buyer = accounts[0];
   const numberOfTokens = 10;
 
   it("Initialises the contract with correct values", async () => {
-    const tokenSaleInstance = await CowTokenSale.deployed();
+    const tokenSaleInstance = await DRajuTokenSale.deployed();
     //Has a contract address
     const address = tokenSaleInstance.address;
     assert.notEqual(address, 0x0, "has contract address");
@@ -22,8 +22,8 @@ contract("CowTokenSale", (accounts) => {
   });
 
   it("Can buy tokens", async () => {
-    const tokenSaleInstance = await CowTokenSale.deployed();
-    const tokenInstance = await Cow.deployed();
+    const tokenSaleInstance = await DRajuTokenSale.deployed();
+    const tokenInstance = await DRaju.deployed();
 
     //Send all token supply from token instance to token sale
     const tokenSaleInstanceAddress = await tokenSaleInstance.address;
@@ -78,8 +78,8 @@ contract("CowTokenSale", (accounts) => {
 
   it("Fails to buy more tokens than available by token sale contract", async () => {
     try {
-      const tokenSaleInstance = await CowTokenSale.deployed();
-      const tokenInstance = await Cow.deployed();
+      const tokenSaleInstance = await DRajuTokenSale.deployed();
+      const tokenInstance = await DRaju.deployed();
 
       //Token ownership was transferred to tokenSale contract in previous test
 
@@ -104,7 +104,7 @@ contract("CowTokenSale", (accounts) => {
 
   it("Must fail is attempting to buy tokens with insuffient value from buyer", async () => {
     try {
-      const tokenSaleInstance = await CowTokenSale.deployed();
+      const tokenSaleInstance = await DRajuTokenSale.deployed();
       //Buy tokens
       const reciept = await tokenSaleInstance.buyTokens(numberOfTokens, {
         from: buyer,
@@ -118,8 +118,8 @@ contract("CowTokenSale", (accounts) => {
   });
 
   it("Can end token sale and remaining balance is sent to token contract", async () => {
-    const tokenSaleInstance = await CowTokenSale.deployed();
-    const tokenInstance = await Cow.deployed();
+    const tokenSaleInstance = await DRajuTokenSale.deployed();
+    const tokenInstance = await DRaju.deployed();
 
     //Check balance remaining
     let tokensRemainingInSale = await tokenInstance.balanceOf(

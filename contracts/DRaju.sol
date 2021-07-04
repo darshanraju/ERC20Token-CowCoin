@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.21 <0.7.0;
 
-contract Cow {
+contract DRaju {
 
-    string public name = "Cow";
-    string public symbol = "MOO";
+    string public name = "DRaju";
+    string public symbol = "DRJU";
     uint256 public totalSupply;
 
     mapping(address => uint256) public balanceOf;
