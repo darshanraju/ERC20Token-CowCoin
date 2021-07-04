@@ -8,13 +8,13 @@ import { makeStyles } from "@material-ui/core";
 import CoinStats from "./components/CoinStats";
 
 const App: React.FC = () => {
-  const [web3, setWeb3] = useState();
+  const [, setWeb3] = useState();
   const [accounts, setAccounts] = useState<Array<string>>([]);
   const [tokenSaleContract, setTokenSaleContract] = useState<any>();
   const [tokenContract, setTokenContract] = useState<any>();
   const [tokenAttributes, setTokenAttributes] =
     useState<tokenAttributes | null>(null);
-  const [tokensRemaining, setTokensRemaining] = useState<number | null>();
+  const [tokensRemaining, setTokensRemaining] = useState<number>(100000);
 
   const connectToWeb3 = async () => {
     try {
@@ -106,21 +106,13 @@ const App: React.FC = () => {
   };
 
   const buyTokenCallback = async (amount: number) => {
-    console.log("TEST");
     try {
       if (!tokenAttributes) throw new Error("Token attributes do not exist");
       const payment = amount * tokenAttributes.tokenPrice;
-      console.log(`amount: ${amount} type: ${typeof amount}`);
-      console.log(
-        `tokenPrice: ${
-          tokenAttributes.tokenPrice
-        } type: ${typeof tokenAttributes.tokenPrice}`
-      );
-      console.log(`Payment: ${payment}`);
+
       const reciept = await tokenSaleContract.methods
         .buyTokens(amount)
         .send({ from: accounts[0], value: payment });
-      console.log(reciept);
       await getCoingRemainingForSale();
     } catch (error) {
       console.log(error);
@@ -144,7 +136,7 @@ const App: React.FC = () => {
     <div className={classes.root}>
       {tokenContract && (
         <>
-          <div className={classes.title}>Cow Coin ICO</div>
+          <div className={classes.title}>DRaju ICO</div>
           <div className={classes.address}>{tokenContract._address}</div>
           <div className={classes.transactionContainer}>
             <BuyToken buyTokenCallback={buyTokenCallback} />
@@ -159,7 +151,7 @@ const App: React.FC = () => {
                 ></div>
               </div>
             </>
-            <CoinStats />
+            <CoinStats tokensRemaining={tokensRemaining} />
           </div>
         </>
       )}

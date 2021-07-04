@@ -13,11 +13,16 @@ const useStyles = makeStyles((theme) => ({
   text: {
     flex: "3",
     height: "100%",
+    color: "white",
+    border: "1px solid darkgray",
   },
   buy: {
     flex: "1",
     height: "100%",
     opacity: "70%",
+  },
+  input: {
+    color: "#2EFF22",
   },
 }));
 
@@ -49,16 +54,21 @@ const BuyToken = ({ buyTokenCallback }: BuyToken) => {
       <TextField
         className={classes.text}
         id="outlined-basic"
-        placeholder="Buy $MOO"
+        placeholder="Buy $DRJU"
         variant="outlined"
         value={tokensToBuy}
         onChange={onChanceHandler}
+        inputProps={{
+          className: classes.input,
+        }}
+        onFocus={() => {}}
+        onBlur={() => {}}
       />
       <Button
         type="submit"
         className={classes.buy}
         variant="contained"
-        color="primary"
+        color="default"
       >
         Buy
       </Button>

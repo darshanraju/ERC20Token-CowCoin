@@ -5,8 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/000/259/014/original/dairy-cow-in-a-field-vector.jpg");
+  /* background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcryptolina.io%2Fwp-content%2Fuploads%2F2019%2F01%2Fbackground-texture-1382002_1920.jpg&f=1&nofb=1"); */
+  /* background-color: "#4d7397"; */
+  background-color: #101520;
   background-size: cover;
+  color: rgb(255, 255, 255);
 }
 
 code {

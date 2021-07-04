@@ -1,8 +1,14 @@
 import { makeStyles } from "@material-ui/core";
 import React from "react";
 
-const CoinStats = () => {
+interface ICoinStats {
+  tokensRemaining: number;
+}
+
+const CoinStats = ({ tokensRemaining }: ICoinStats) => {
   const classes = useStyles();
+  const ethMarketCap = (100000 - tokensRemaining) * 0.0001;
+
   return (
     <div className={classes.statsContainer}>
       <div className={classes.stat}>
@@ -10,7 +16,8 @@ const CoinStats = () => {
         <div className={classes.subTitle}>1 Moo = 0.001 Eth</div>
       </div>
       <div className={classes.stat}>
-        <div className={classes.title}>Market Cap</div>
+        <div className={classes.title}>Market Cap in ETH</div>
+        <div className={classes.subTitle}>{ethMarketCap}ETH</div>
       </div>
     </div>
   );
